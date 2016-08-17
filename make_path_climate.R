@@ -69,7 +69,7 @@ path_daily_data <- sfSapply(1:dim(id_for_choose)[1], function(i) paste0(path, '/
 id_for_choose <- data.frame(id_for_choose, path = path_daily_data)
 
 
-write.table(id_for_choose, file = paste0(path, '/01-datos_clima/datos_diarios/baseline/', 'coords_path.txt'), sep = ";", row.names = F)
+write.table(id_for_choose, file = paste0(path, '/01-datos_clima/datos_diarios/', scenario, '/coords_path.txt'), sep = ";", row.names = F)
 
 
 sfStop()
